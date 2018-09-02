@@ -32,12 +32,14 @@ Realizar o download do VirtualBox e do Appliance conforme links descritos a segu
 
 ## ACESSANDO O MYSQL
 
-<p align="justify"> </p>
+<p align="justify">A administração do banco MySql em nosso ambiente será realizado pelo software Workbench, para isso abra o aplicativo, Figura 02, e inicialize uma nova conexão clicando no botão <b>+</b> ao lado de <b>MySQL Connections</b>.</p>
 <p align="center"><img src="images/appliance/02 - workbench.png"  width="900" height="626" align="middle"/></p>
-<h4 align="middle">Figura 02 - Diagrama Rede</h4>
-
+<h4 align="middle">Figura 02 - Workbench</h4>
+<p align="justify">Atribua um nome para a nova conexão em <b>Connection Name</b>, infome o endereço IP do servidor que está instalado o banco MySql, em nosso caso é o 192.168.0.1 no campo <b>hostname</b>, informe ainda no campo <b>Username</b> o usuário com privilégios de acesso ao banco, já criei previamento um usuário <b>aluno</b> com a senha: 123456, conforme Figura 03.</p>
 <p align="center"><img src="images/appliance/03 - workbench-connection.png"  width="850" height="530" align="middle"/></p>
-<h4 align="middle">Figura 03 - Diagrama Rede</h4>
+<h4 align="middle">Figura 03 - Configuração Conexão Mysql</h4>
+<p align="justify">Em seguida você conseguirar acessar o banco clicando duas vezes na conexão nova que vocês acabaram de criar, conseguindo administrar totalmente o banco de dados. </p>
+
 <p align="justify">Bons Estudos a Todos</p>
 <p align="justify">"A mente que se abre para uma nova ideia, jamais voltará para o seu tamanho original"
 </p>
