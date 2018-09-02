@@ -33,10 +33,10 @@ Realizar o download do VirtualBox e do Appliance conforme links descritos a segu
 ## ACESSANDO O MYSQL
 
 <p align="justify"> </p>
-<p align="center"><img src="images/appliance/02 - workbench.png"  width="1100" height="765" align="middle"/></p>
+<p align="center"><img src="images/appliance/02 - workbench.png"  width="900" height="626" align="middle"/></p>
 <h4 align="middle">Figura 02 - Diagrama Rede</h4>
 
-<p align="center"><img src="images/appliance/03 - workbench-connection.png"  width="900" height="561" align="middle"/></p>
+<p align="center"><img src="images/appliance/03 - workbench-connection.png"  width="850" height="530" align="middle"/></p>
 <h4 align="middle">Figura 03 - Diagrama Rede</h4>
 <p align="justify">Bons Estudos a Todos</p>
 <p align="justify">"A mente que se abre para uma nova ideia, jamais voltará para o seu tamanho original"
