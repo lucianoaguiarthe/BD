@@ -1,18 +1,21 @@
-# SERVIÇO SAMBA
-<p align="justify">O Samba é um serviço disponível para Sistemas Operacionais Linux que permite compartilhar diretórios e impressoras, bem como implementar um controlador de domínio. A primeira versão do Samba foi disponibilizada em 1992, e escrita por Andrew Tridgell, um Australiano que na época era estudante de ciências da computação, atualmente encontra-se em sua versão 4, a grande novidade desta versão são as implementações de Diretivas de Grupos. Para o seu funcionamento necessita da instalação dos seguintes pacotes:</p>
+# LABORATÓRIO CAMADA DE REDES
 
-*  <b>Samba</b> – Que disponibiliza o samba propriamente dito;<p>
-* <b>Kerberos</b> – Protocolo desenvolvido para prover altenticação em aplicações e serviços cliente/servidor;<p>
-* <b>Winbind</b> -  Proporciona uma integração de usuários Windows com o samba;<p>
-* <b>Smbclient</b> – Permite acessar compartilhamentos em outras máquinas.<p>
+<h2 align="middle">Camada de Rede</h2>
+<p align="justify">A Camada de Rede foca na interconexão de enlaces e redes distintas e para resolver este problemas são necessários dois personagens: Os protocolos de roteamento e os dispositivos de interconexão de enlaces (switchs ou roteadores)</p>
 
-<p align="justify">Para que você possa configurar um ambiente totalmente funcional com controlador de domínio samba, ferramenta de administração do Samba RSAT e um cliente para o teste, criei um Appliance no link abaixo:</p>
+<h2 align="middle">Sistemas Autônomos</h2>
+<p align="justify"></p>
+<p align="center"><img src="images/roteamento/01-as.png"  width="750" height="375" align="middle"/></p><h2 align="middle">Roteamento Estático</h2>
+<p align="justify">O roteamento dinâmico interconecta redes distintas, todavia, sua configuração é realizada pelo administrador do ambiente, devendo criar as rotas necessárias em cada roteador da rede, caso ocorra alguma queda do enlace os pacotes continuaram sendo encaminhados para o enlace descontinuada, somente depois da intervenção do administrador criando uma nova rota é que o problema será solucionado.</p>
 
-[Appliance Samba](https://drive.google.com/open?id=1k_6UyI9RjKqrBUSAVVpLnftYZu6_9aI7) 
+<h2 align="middle">Roteamento Dinâmico</h2>
+<p align="justify">O Roteamento Dinâmico as tabelas são criadas automáticamente pelo algoritmo de roteamento, sem intervenção do administrador do ambiente, devendo a este informar somente qual protocolo de roteamento deve-se utilizar. Os protocolos de roteamento dinâmicos utilizados na camada de rede são:</p>
+*  <b>RIP</b> – Utilizada como característica para escolha da rota o caminho mais curto, baseado na quantidade de saltos, é um protocolo interno ao Sistema Autônomo;<p>
+* <b>OSPF</b> – Tem como caracterísitca para escolha da rota o estado do enlace, que nem sempre é o caminho mais curto é um protocolo interno ao Sistema Autônomo;<p>
+* <b>BGP</b> -  Protocolo de Borda que Interconecta Sistemas Autônomos;<p>
 
-<p align="justify">Este Appliance terá um servidor Samba <b>samba-dc</b>, um cliente para administrar graficamente o Samba, a máquina <b>RSAT-PC</b>, no diretório c:\samba encontra-se o instalador, e a máquina <b>Cliente-PC</b>, para testes com o cliente, conforme diagrama abaixo:</p>
 
-![](images/samba/01_diagrama-samba.png)
+
 <h4 align="middle">Figura 01 - Diagrama de Rede</h4>
 
 
