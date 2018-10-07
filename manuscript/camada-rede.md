@@ -1,13 +1,13 @@
-# LABORATÓRIO CAMADA DE REDES
+# <p align="middle"> LABORATÓRIO CAMADA DE REDES</p>
 
-<h2 align="middle">Camada de Rede</h2>
-<p align="justify">A Camada de Rede foca na interconexão de enlaces e redes distintas e para resolver este problemas são necessários dois personagens: Os protocolos de roteamento e os dispositivos de interconexão de enlaces (switchs ou roteadores)</p>
+<h2 align="middle">Introdução</h2>
+<p align="justify">A Camada de Rede foca na interconexão de enlaces e redes distintas, e para resolver este problemas, são necessários dois personagens: Os protocolos de roteamento e os dispositivos de interconexão de enlaces (switchs ou roteadores)</p>
 
 <h2 align="middle">Sistemas Autônomos</h2>
 <p align="justify">Sistemas Autônomos (SA) são agrupamentos de roteadores administrados por um roteador central, geralmente o que está executando o protocolo BGP, conforme Figura 01, podemos observar um grupo de 3 (três) Sistemas Autônomos.</p>
 <p align="justify">A Estrutura da Internet feita em Sistemas Autônomos dimimuita a quantidade de tabelas de roteamento replicadas, considerando que as informações inerentes as rotas interna a um SA reservam-se aos seus roteadores de borda.</P>
 <p align="center"><img src="images/roteamento/01-as.png"  width="750" height="375" align="middle"/></p>
-<h4 align="middle">Figura 01 - Sistemas Autônomos VM</h4>
+<h4 align="middle">Figura 01 - Sistemas Autônomos</h4>
 <h2 align="middle">Roteamento Estático</h2>
 <p align="justify">O roteamento dinâmico interconecta redes distintas, todavia, sua configuração é realizada pelo administrador do ambiente, devendo criar as rotas necessárias em cada roteador da rede, caso ocorra alguma queda do enlace os pacotes continuaram sendo encaminhados para o enlace descontinuada, somente depois da intervenção do administrador criando uma nova rota é que o problema será solucionado.</p>
 
@@ -28,7 +28,18 @@
 
 <p align="justify">Um roteador é um compador com função específica de interconectar redes, seu hardware funciona de uma maneira um pouco difererente de um computador pessoal, um dos principais fabricantes do mercado é a CISCO, no qual nosso laboratório estará orientado, a Figura 03, apresenta a arquitetura dos componentes principais de um roteador. </p>
 <p align="center"><img src="images/roteamento/03-roteador.png"  width="500" height="300" align="middle"/></p>
-<h4 align="middle">Figura 03 - Componentes Roteador</h4>Router>
+<h4 align="middle">Figura 03 - Componentes Roteador</h4>
+
+*  <b>RAM</b> – Armazena as tabelas de roteamento e o arquivo de configuração temporário do roteador;<p>
+* <b>NVRAM</b> – Armazena o arquivo de configuração que será utilizado na inicialização (startup config), não ocorre perca das informações armazenadas na NVRAM ao desligar o roteador;<p>
+* <b>FLASH</b> - Armazena a imagem de inicialização do Sistema Operacional, possui a possibilidade armazenar várias imagens, retém seu conteúdo quando o roteador é desligado;<p>
+* <b>ROM</b> -  Mantém instruções que definem o autoteste realizado na inicialização do roteador;<p>
+* <b>Console</b> -  É uma interface de acesso direto ao roteador para sua manutenção e atualização de firmware em caso de percado de acesso externo;<p>
+* <b>Interfaces</b> -  Conectam o roteador à rede para entrada e saída de pacotes, podem estar diretamenta conectadas na placa-mãe ou adicinadas através de módulos, em computadores pessoas são chamadas de placas de rede;<p>
+
+<p align="center"><img src="images/roteamento/04-aviso-importante.png"  width="300" height="130" align="middle"/></p>
+
+Router>
 
 
 
