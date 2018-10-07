@@ -19,9 +19,17 @@
 
 <h2 align="middle">Laboratório Roteamento Dinâmico</h2>
 
-<p align="justify">Iremos realizar a interconexão de duas redes distintas, Figura 2, usando um protocolo de roteamento dinâmico rip, a</b></p>
+<p align="justify">Iremos realizar a interconexão de duas redes distintas, Figura 2, usando um protocolo de roteamento dinâmico RIP, que utiliza o algoritmo de Vetor de Distância, ou seja, o melhor caminho é o que possui a menor quantidade de saltos</b></p>
 
-<p align="center"><img src="images/roteamento/02-diagrama_rede.png"  width="600" height="391" align="middle"/></p>Router>
+<p align="center"><img src="images/roteamento/02-diagrama_rede.png"  width="600" height="391" align="middle"/></p>
+<h4 align="middle">Figura 02 - Diagrama Rede</h4>
+
+<h3 align="middle">Entendo a Arquitetura de um Roteador</h3>
+
+
+<p align="center"><img src="images/roteamento/03-roteador.png"  width="600" height="360" align="middle"/></p>
+<h4 align="middle">Figura 02 - Diagrama Rede</h4>Router>
+
 
 
 enableRouter#configure terminalEnter configuration commands, one per line.  End with CNTL/Z.Router(config)#interface gigabitethernet 0/0Router(config-if)#ip address 192.168.0.1 255.255.255.0Router(config-if)#no shutdownRouter(config-if)#%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to upRouter(config-if)#exitRouter(config)#interface serial 0/3/0Router(config-if)#ip address 192.168.10.1 255.255.255.0Router(config-if)#no shutdown%LINK-5-CHANGED: Interface Serial0/3/0, changed state to downRouter(config-if)#exitRouter(config)#router ripRouter(config-router)#network 192.168.0.1Router(config-router)#network 192.168.10.1Router(config-router)#passive-interface giGabitethernet 0/0Router(config-router)#endRouter#%SYS-5-CONFIG_I: Configured from console by consoleRouter#copy run startDestination filename [startup-config]? Building configuration...[OK]
