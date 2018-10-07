@@ -42,7 +42,7 @@
 
 <h3 align="middle">Preparando o Ambiente para Realizar o Laboratório</h3>
 
-<p align="justify">Iremos utilizar um software de simualação de rede desenvolvido e disponibilizado pela própria CISCO chamado Packet Tracer, ele pode ser executado até mesmo em computadores antigos de 32 bits, para fazer o download cadastre-se no curso:</p>
+<p align="justify">Iremos utilizar um software de simualação de rede desenvolvido e disponibilizado pela própria CISCO, chamado Packet Tracer, ele pode ser executado até mesmo em computadores antigos de 32 bits, para fazer o download cadastre-se no curso:</p>
 
 
 [Introduction to Packet Tracer](https://www.microsoft.com/pt-BR/download/details.aspx?id=45520)
@@ -61,7 +61,7 @@
 
 <h3 align="middle">Execução do Laboratório</h3>
 <p align="justify">Ao abrir o arquivo baixado no link acima, o Packet Tracer será aberto com duas telas, uma com o wizard que apresentará seus acerto no final e a outra com o diagrama de rede no qual você irá configurar, Figura4. </p>
-<p align="center"><img src="images/roteamento/05-lab-packettracer.png"  width="800" height="398" align="middle"/></p>
+<p align="center"><img src="images/roteamento/05-lab-packettracer.png"  width="900" height="448" align="middle"/></p>
 <h4 align="middle">Figura 04 - Laboratório Packet Tracer</h4>
 
 
