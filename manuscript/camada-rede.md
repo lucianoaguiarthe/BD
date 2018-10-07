@@ -27,8 +27,8 @@
 <h3 align="middle">Entendo a Arquitetura de um Roteador</h3>
 
 
-<p align="center"><img src="images/roteamento/03-roteador.png"  width="600" height="360" align="middle"/></p>
-<h4 align="middle">Figura 02 - Diagrama Rede</h4>Router>
+<p align="center"><img src="images/roteamento/03-roteador.png"  width="500" height="300" align="middle"/></p>
+<h4 align="middle">Figura 03 - Componentes Roteador</h4>Router>
 
 
 
