@@ -4,8 +4,11 @@
 <p align="justify">A Camada de Rede foca na interconexão de enlaces e redes distintas e para resolver este problemas são necessários dois personagens: Os protocolos de roteamento e os dispositivos de interconexão de enlaces (switchs ou roteadores)</p>
 
 <h2 align="middle">Sistemas Autônomos</h2>
-<p align="justify"></p>
-<p align="center"><img src="images/roteamento/01-as.png"  width="750" height="375" align="middle"/></p><h2 align="middle">Roteamento Estático</h2>
+<p align="justify">Sistemas Autônomos (SA) são agrupamentos de roteadores administrados por um roteador central, geralmente o que está executando o protocolo BGP, conforme Figura 01, podemos observar um grupo de 3 (três) Sistemas Autônomos.</p>
+<p align="justify">A Estrutura da Internet feita em Sistemas Autônomos dimimuita a quantidade de tabelas de roteamento replicadas, considerando que as informações inerentes as rotas interna a um SA reservam-se aos seus roteadores de borda.</P>
+<p align="center"><img src="images/roteamento/01-as.png"  width="750" height="375" align="middle"/></p>
+<h4 align="middle">Figura 01 - Sistemas Autônomos VM</h4>
+<h2 align="middle">Roteamento Estático</h2>
 <p align="justify">O roteamento dinâmico interconecta redes distintas, todavia, sua configuração é realizada pelo administrador do ambiente, devendo criar as rotas necessárias em cada roteador da rede, caso ocorra alguma queda do enlace os pacotes continuaram sendo encaminhados para o enlace descontinuada, somente depois da intervenção do administrador criando uma nova rota é que o problema será solucionado.</p>
 
 <h2 align="middle">Roteamento Dinâmico</h2>
@@ -14,14 +17,15 @@
 * <b>OSPF</b> – Tem como caracterísitca para escolha da rota o estado do enlace, que nem sempre é o caminho mais curto é um protocolo interno ao Sistema Autônomo;<p>
 * <b>BGP</b> -  Protocolo de Borda que Interconecta Sistemas Autônomos;<p>
 
+<h2 align="middle">Laboratório Roteamento Dinâmico</h2>
+
+<p align="justify">Iremos realizar a interconexão de duas redes distintas, Figura 2, usando um protocolo de roteamento dinâmico rip, a</b></p>
+
+<p align="center"><img src="images/roteamento/02-diagrama_rede.png"  width="600" height="391" align="middle"/></p>Router>
 
 
-<h4 align="middle">Figura 01 - Diagrama de Rede</h4>
-
-
-<p align="justify">Conforme apresentado no diagrama de rede acima Fig. 01 o IP da interface <b>enp0s3</b> é 192.168.5.1, a senha tanto do usuário <b>root</b> como do usuário <b>aluno</b> é <b>123456</b></p>
-
-<p align="justify">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho, conforme configuração da máquina que estará executando o Appliance. Podemos observar a alocação de memória desejada na Fig. 02.</p>
+enableRouter#configure terminalEnter configuration commands, one per line.  End with CNTL/Z.Router(config)#interface gigabitethernet 0/0Router(config-if)#ip address 192.168.0.1 255.255.255.0Router(config-if)#no shutdownRouter(config-if)#%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to upRouter(config-if)#exitRouter(config)#interface serial 0/3/0Router(config-if)#ip address 192.168.10.1 255.255.255.0Router(config-if)#no shutdown%LINK-5-CHANGED: Interface Serial0/3/0, changed state to downRouter(config-if)#exitRouter(config)#router ripRouter(config-router)#network 192.168.0.1Router(config-router)#network 192.168.10.1Router(config-router)#passive-interface giGabitethernet 0/0Router(config-router)#endRouter#%SYS-5-CONFIG_I: Configured from console by consoleRouter#copy run startDestination filename [startup-config]? Building configuration...[OK]
+Router#]<p align="justify">É importante pontuar que a memória reservada para as máquinas virtuais foram de 1255 MB, todavia podendo diminuir este tamanho, conforme configuração da máquina que estará executando o Appliance. Podemos observar a alocação de memória desejada na Fig. 02.</p>
 
 <p align="center"><img src="images/samba/02_virtualbox.png"  width="800" height="493" align="middle"/></p>
 <h4 align="middle">Figura 02 - Alocação de Memória VM</h4>
